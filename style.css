@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(32, 32, 32)
+}
+
+p,h1,h2,h3,h4,h5,a,label,input[type="file"],button {
+    font-family: 'Red Hat Mono', monospace;
+    color: whitesmoke;
+}
+
+.Processing-Img {
+    width: 400px !important;
+    height: 400px !important;
+    border-width: 10px !important;
+}
+
+
+.FadeIn-FX {
+    opacity: 1 !important;
+}
+
+#processbar {
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.Processing-FileUpload {
+    padding: 10px !important;
+    width: 70px !important;
+    height: 70px !important;
+}
+
+
+#File-Upload {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 10;
+}
+
+#File-Upload-Inner h1 {
+    text-align: center;
+}
+
+#File-Upload-Inner p {
+    text-align: center;
+}
+
+#File-Upload-Inner input[type="file"] {
+    text-align: center;
+}
+
+#File-Upload-Inner-Active {
+    opacity: 0;
+    width: 600px;
+    height: 500px;
+}
+
+#File-Upload-Inner {
+    background-color: rgba(0, 0, 0, 0.438);
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 15px 15px;
+    transition: 0.3s;
+}
+
+#LoadingIcon {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#ImagePreview {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    border-color: rgb(161, 161, 161);
+}
+
+button {
+    padding: 15px 15px;
+    width: 100%;
+    height: 50px;
+    color: whitesmoke;
+    background-color: rgb(0, 153, 255);
+    font-weight: 500;
+    border-radius: 8px;
+    border-width: 0;
+    position: relative;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+button:hover {
+    background-color: rgb(77, 184, 255);
+}

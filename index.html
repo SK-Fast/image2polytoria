@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css" integrity="sha512-tpsEzNMLQS7w9imFSjbEOHdZav3/aObSESAL1y5jyJDoICFF2YwEdAHOPdOr1t+h8hTzar0flphxR76pd0V1zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Image file to polytoria file</title>
+    </head>
+    <body>
+        <div id="File-Upload">
+            
+            <div id="File-Upload-Inner">
+                <h1 id="FileUploadTitle">Image to Polytoria File</h1>
+                <input id="upload" type="file" accept="image/png, image/jpeg" >
+                <div id="Configs">
+                </br>
+
+                    <label>Render quality(1 is highest)</label>
+                    <input value="15" id="Render-Amount" type="number">
+                </div>
+                <p id="FileUploadWarning">Data production is important! No data were sent during process!</p>
+                <button id="ProcessFileIcon">Start!</button>
+                <img id="LoadingIcon" src="Images/loading.gif" style="display: none;" width="80" height="80" >
+            </div>
+        </div>
+        <img width="500" height="500" id="ImagePreview" src="https://polytoria.com/assets/img/pending.png">
+        <progress value="0" max="100" id="processbar">
+
+    </body>
+
+        <script src="bundle.js"></script>
+
+
+        
+    </script>
+</html>
